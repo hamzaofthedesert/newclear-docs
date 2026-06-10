@@ -1,0 +1,96 @@
+/**
+ * Newclear Documentation — Custom Theme
+ * Brand color: #6366f1 (indigo)
+ */
+
+:root {
+  --ifm-color-primary: #6366f1;
+  --ifm-color-primary-dark: #4f52ef;
+  --ifm-color-primary-darker: #4346ee;
+  --ifm-color-primary-darkest: #2023e9;
+  --ifm-color-primary-light: #777af3;
+  --ifm-color-primary-lighter: #8385f4;
+  --ifm-color-primary-lightest: #a5a7f8;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(99, 102, 241, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #818cf8;
+  --ifm-color-primary-dark: #6d78f6;
+  --ifm-color-primary-darker: #636ef5;
+  --ifm-color-primary-darkest: #3d45f2;
+  --ifm-color-primary-light: #96a0fa;
+  --ifm-color-primary-lighter: #a0abfb;
+  --ifm-color-primary-lightest: #c0c7fd;
+  --docusaurus-highlighted-code-line-bg: rgba(129, 140, 248, 0.15);
+  --ifm-background-color: #0f0f1a;
+  --ifm-background-surface-color: #1a1a2e;
+  --ifm-navbar-background-color: #12121f;
+  --ifm-footer-background-color: #0a0a14;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+[data-theme='dark'] .navbar {
+  background: linear-gradient(180deg, #12121f 0%, #0f0f1a 100%);
+}
+
+/* Hero section on homepage */
+.hero {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+/* Sidebar */
+[data-theme='dark'] .menu {
+  background-color: #12121f;
+}
+
+/* Code blocks */
+[data-theme='dark'] pre {
+  background-color: #1e1e3a !important;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* Admonitions — custom colors */
+.alert--tip {
+  --ifm-alert-background-color: rgba(99, 102, 241, 0.08);
+  --ifm-alert-border-color: #6366f1;
+}
+
+/* Table of contents active link */
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Badge styling */
+.badge--primary {
+  background-color: #6366f1;
+}
+
+/* Search bar */
+.navbar__search-input {
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* Footer */
+[data-theme='dark'] .footer {
+  background: linear-gradient(180deg, #0a0a14 0%, #06060f 100%);
+}
+
+/* Card hover effect */
+.card:hover {
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.15);
+  transition: all 0.2s ease;
+}
+
+/* Headings color accent */
+[data-theme='dark'] h1,
+[data-theme='dark'] h2 {
+  color: #e2e4ff;
+}
